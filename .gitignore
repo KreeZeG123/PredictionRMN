@@ -1,0 +1,68 @@
+# Node.js / Frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.next/
+/frontend/.cache/
+*.log
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/lerna-debug.log*
+/frontend/dist
+/frontend/dist-ssr
+
+# Dependency lockfiles (keep only one if needed)
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+*.exe
+!app.exe
+*.out
+*.app
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# PyInstaller output
+*.spec
+/build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Test outputs / coverage
+coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+.noseids
+
+# Static analysis / linting
+.mypy_cache/
+.pylint.d/
+
+# Docs build artifacts
+/docs/_build/
+
+# Misc
+*.orig
+*.rej
