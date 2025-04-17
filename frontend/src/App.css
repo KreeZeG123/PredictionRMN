@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* === Charte Graphique CSS === */
+
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF; /* Fond de l’application */
+  color: #333333; /* Texte foncé par défaut */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav .material-symbols-outlined {
+  font-size: 40px;
+  color: #333333;
+  transition: color 0.2s ease;
+  cursor: pointer;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .material-symbols-outlined:hover {
+  color: #188794; /* couleur au survol (bleu ici) */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Menus */
+.menu-clair {
+  background-color: #FCFCFC; /* Fond des menus clairs */
+  color: #333333;
 }
 
-.card {
-  padding: 2em;
+.menu-fonce {
+  background-color: #676767; /* Fond des menus foncés */
+  color: #FFFFFF;
 }
 
-.read-the-docs {
-  color: #888;
+/* Liens, boutons ou éléments interactifs */
+.btn,
+a {
+  background-color: #167782; /* Couleur principale */
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+a:hover {
+  background-color: #188794; /* Couleur hover */
 }
