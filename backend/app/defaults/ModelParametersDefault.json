@@ -1,15 +1,18 @@
-[
-  {
-    "modelName": "Dummy Predictor",
-    "endpoint": "/api/mockPredictionModel",
-    "parameters": [
-      {
-        "key": "version",
-        "label": "Version",
-        "type": "number",
-        "required": true,
-        "value": 1.0
-      }
-    ]
-  }
-]
+{
+  "currentModel": "",
+  "models": [
+    {
+      "modelName": "Dummy Predictor",
+      "endpoint": "/api/mockPredictionModel",
+      "parameters": [
+        {
+          "key": "version",
+          "label": "Version",
+          "type": "number",
+          "required": true,
+          "value": 1.0
+        }
+      ]
+    }
+  ]
+}

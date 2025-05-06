@@ -27,5 +27,5 @@ def mock_prediction_model():
     # Mock spectrum data for the corresponding molecules
     return jsonify({
         "smiles": "CCOC1=CC=C(C(C)=O)C=C1",
-        "spectre": spectre
+        "spectrum": spectre
     }), 200

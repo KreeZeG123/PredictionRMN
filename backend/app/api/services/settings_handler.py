@@ -54,13 +54,27 @@ def check_general_settings_format(data: Any) -> bool:
 
 
 def check_model_parameters_format(data: Any) -> bool:
-    if not isinstance(data, list) or not data:
+    if not isinstance(data, dict):
         return False
 
-    for model in data:
+    if 'currentModel' not in data or 'models' not in data:
+        return False
+
+    print(data['currentModel'])
+
+    if not isinstance(data['currentModel'], str):
+        return False
+
+    models = data['models']
+    if not isinstance(models, list) or not models:
+        return False
+
+    for model in models:
         if not isinstance(model, dict):
             return False
         if 'modelName' not in model or 'endpoint' not in model or 'parameters' not in model:
+            return False
+        if not isinstance(model['modelName'], str) or not isinstance(model['endpoint'], str):
             return False
         if not isinstance(model['parameters'], list):
             return False
@@ -81,4 +95,5 @@ def check_model_parameters_format(data: Any) -> bool:
                 return False
             if 'value' in param and not isinstance(param['value'], (str, int, float, bool)):
                 return False
+
     return True
