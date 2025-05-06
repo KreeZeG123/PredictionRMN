@@ -1,0 +1,3 @@
+{
+  "error": "Prediction request failed: 405 Client Error: METHOD NOT ALLOWED for url: http://localhost:5000/api/mockPredictionModeld"
+}

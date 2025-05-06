@@ -1,6 +1,7 @@
 [
   {
     "modelName": "Dummy Predictor",
+    "endpoint": "/api/mockPredictionModel",
     "parameters": [
       {
         "key": "version",

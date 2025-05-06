@@ -1,19 +1,24 @@
 blinker==1.8.2
 certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+charset-normalizer==3.4.2
 click==8.1.8
 cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1696677705766/work
 Flask==3.0.3
 Flask-Cors==5.0.0
 fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1651017731964/work
 greenlet @ file:///home/conda/feedstock_root/build_artifacts/greenlet_1648882382141/work
+idna==3.10
 importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1648854389294/work
 MarkupSafe==2.1.5
 matplotlib @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-suite_1651609455247/work
+mkl-fft @ file:///croot/mkl_fft_1695058164594/work
+mkl-random @ file:///croot/mkl_random_1695059800811/work
+mkl-service==2.4.0
 munkres==1.1.4
-numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1651020413938/work
+numpy @ file:///work/mkl/numpy_and_numpy_base_1682953417311/work
 olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1701735466804/work
 packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1745345660/work
 pandas==1.4.2
@@ -24,8 +29,10 @@ python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateu
 pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1726055524169/work
 rdkit==2024.3.5
 reportlab==3.5.68
+requests==2.32.3
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 SQLAlchemy @ file:///home/conda/feedstock_root/build_artifacts/sqlalchemy_1651017965248/work
 unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1649111919534/work
+urllib3==2.2.3
 Werkzeug==3.0.6
 zipp==3.20.2

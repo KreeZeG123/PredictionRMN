@@ -60,7 +60,7 @@ def check_model_parameters_format(data: Any) -> bool:
     for model in data:
         if not isinstance(model, dict):
             return False
-        if 'modelName' not in model or 'parameters' not in model:
+        if 'modelName' not in model or 'endpoint' not in model or 'parameters' not in model:
             return False
         if not isinstance(model['parameters'], list):
             return False
