@@ -4,6 +4,7 @@ import platform
 
 class Config:
     DEBUG = True
+    CORS_ORIGINS = ["http://localhost:5173"]
 
     # Gère le dossier static selon le mode (développement vs PyInstaller)
     if getattr(sys, 'frozen', False):

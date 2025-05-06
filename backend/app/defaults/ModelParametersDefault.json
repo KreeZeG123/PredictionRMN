@@ -1,25 +1,13 @@
 [
   {
-    "modelName": "modelB",
+    "modelName": "Dummy Predictor",
     "parameters": [
       {
-        "key": "param1",
-        "label": "Parameter 1",
-        "type": "text",
-        "required": true
-      },
-      {
-        "key": "param2",
-        "label": "Parameter 2",
+        "key": "version",
+        "label": "Version",
         "type": "number",
         "required": true,
-        "value": 3
-      },
-      {
-        "key": "param3",
-        "label": "Parameter 3",
-        "type": "boolean",
-        "required": true
+        "value": 1.0
       }
     ]
   }

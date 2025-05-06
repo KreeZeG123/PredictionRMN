@@ -7,10 +7,11 @@ from app.api import api_routes
 def create_app():
     # Créer une instance de l'application Flask
     app = Flask(__name__, static_folder=Config.STATIC_FOLDER)
-    CORS(app, origins=["http://localhost:5173"])
     
     # Charger la configuration
     app.config.from_object(Config)
+
+    CORS(app, origins=app.config['CORS_ORIGINS'])
     
     # Enregistrer les Blueprints
     app.register_blueprint(main_routes)
