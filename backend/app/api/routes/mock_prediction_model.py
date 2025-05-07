@@ -13,7 +13,7 @@ def mock_prediction_model():
     if not smiles:
         return jsonify({"error": "Missing 'smiles' in mock prediction"}), 400
 
-    print("🧪 Mock Prediction Parameters:")
+    print("Mock Prediction Parameters:")
     for key, value in data.items():
         if key != "smiles":
             print(f"  - {key}: {value}")

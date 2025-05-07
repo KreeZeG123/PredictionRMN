@@ -58,7 +58,6 @@ def reset_to_default(fileName):
     if default_data is None:
         return jsonify({"error": f"No default available for '{fileName}'"}), 500
 
-    # Vérification du format avant sauvegarde
     if fileName == "GeneralSettings":
         if not check_general_settings_format(default_data):
             return jsonify({"error": "Default GeneralSettings format is invalid"}), 500

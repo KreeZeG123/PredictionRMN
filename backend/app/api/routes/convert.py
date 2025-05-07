@@ -13,7 +13,5 @@ def convert_to_kekule_smiles():
     try:
         kekule = convert_smiles_to_kekule(smiles)
         return jsonify({"smiles": smiles, "kekule_smiles": kekule})
-    except ValueError as e:
-        return jsonify({"error": str(e)}), 400
-    except Exception as e:
-        return jsonify({"error": f"Conversion error: {str(e)}"}), 500
+    except ValueError as ve:
+        return jsonify({"error": str(ve)}), 400

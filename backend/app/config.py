@@ -12,7 +12,6 @@ class Config:
     else:
         STATIC_FOLDER = os.path.join(os.path.dirname(__file__), '../../frontend/build')
 
-    # Nom de l'application (utilisé pour les dossiers de config)
     APP_NAME = "PredictionRMN"
 
     @staticmethod
