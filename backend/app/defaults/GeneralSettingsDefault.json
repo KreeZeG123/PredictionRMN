@@ -8,6 +8,13 @@
         "type": "boolean",
         "default": true,
         "value": true
+      },
+      {
+        "key": "confirmOnClear",
+        "label": "Show confirmation before clearing the current project",
+        "type": "boolean",
+        "default": true,
+        "value": true
       }
     ]
   }
