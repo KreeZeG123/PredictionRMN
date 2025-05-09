@@ -1,6 +1,5 @@
 from flask import Blueprint, send_from_directory, current_app
 import os
-import sys
 
 main_routes = Blueprint('main', __name__)
 

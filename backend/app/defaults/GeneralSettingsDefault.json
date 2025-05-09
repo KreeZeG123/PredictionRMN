@@ -15,6 +15,13 @@
         "type": "boolean",
         "default": true,
         "value": true
+      },
+      {
+        "key": "hideTabBarWhenSingleTab",
+        "label": "Hide the Tab Bar when there is only a single tab",
+        "type": "boolean",
+        "default": false,
+        "value": false
       }
     ]
   }
