@@ -1,6 +1,6 @@
 import os
 import sys
-import platform
+from platformdirs import user_config_dir
 
 class Config:
     DEBUG = True
@@ -13,19 +13,14 @@ class Config:
         STATIC_FOLDER = os.path.join(os.path.dirname(__file__), '../../frontend/build')
 
     APP_NAME = "PredictionRMN"
+    APP_AUTHOR = "LERIA"
 
     @staticmethod
     def get_user_settings_dir():
-        system = platform.system()
-        if system == "Windows":
-            return os.path.join(os.getenv('APPDATA'), Config.APP_NAME)
-        elif system == "Darwin":  # macOS
-            return os.path.join(os.path.expanduser('~/Library/Application Support/'), Config.APP_NAME)
-        else:  # Linux and autres
-            return os.path.join(os.path.expanduser('~/.config/'), Config.APP_NAME)
+        return user_config_dir(Config.APP_NAME, Config.APP_AUTHOR)
 
     @staticmethod
-    def get_settings_file_path(filename="settings.json"):
+    def get_settings_file_path(filename):
         settings_dir = Config.get_user_settings_dir()
         os.makedirs(settings_dir, exist_ok=True)
         return os.path.join(settings_dir, filename)
