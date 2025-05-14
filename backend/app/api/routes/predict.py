@@ -1,6 +1,8 @@
 from flask import Blueprint, request, jsonify
 import requests
 from app.api.services.kekule_converter import convert_smiles_to_kekule
+from app.config import Config
+import time
 
 predict_bp = Blueprint('predict', __name__)
 
@@ -34,9 +36,11 @@ def predict():
     else:
         base_url = request.host_url.rstrip("/")
         target_url = f"{base_url}/{endpoint.lstrip('/')}"
+        
+    time.sleep(5)
 
     try:
-        response = requests.post(target_url, json=payload, timeout=10)
+        response = requests.post(target_url, json=payload, timeout=Config.PREDICTION_MODEL_TIMEOUT_IN_SECONDS)
         response.raise_for_status()
         return jsonify(response.json()), 200
 

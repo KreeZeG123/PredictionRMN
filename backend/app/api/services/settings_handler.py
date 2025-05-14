@@ -60,8 +60,6 @@ def check_model_parameters_format(data: Any) -> bool:
     if 'currentModel' not in data or 'models' not in data:
         return False
 
-    print(data['currentModel'])
-
     if not isinstance(data['currentModel'], str):
         return False
 

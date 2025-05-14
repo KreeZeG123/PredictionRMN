@@ -14,6 +14,7 @@ class Config:
 
     APP_NAME = "PredictionRMN"
     APP_AUTHOR = "LERIA"
+    PREDICTION_MODEL_TIMEOUT_IN_SECONDS = 300
 
     @staticmethod
     def get_user_settings_dir():
